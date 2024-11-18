@@ -9,9 +9,7 @@ export default async function insertIntoDB(
 ): Promise<UrlProps | null> {
     try {
         const urlsCollection = await getCollection(URLS_COLLECTION); // Get the collection from the DB
-
         // Check if the alias already exists
-
         const existingUrl = await urlsCollection.findOne({ alias });
         if (existingUrl) {
             console.error(`The alias "${alias}" is already in use.`);
