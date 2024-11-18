@@ -1,6 +1,5 @@
 import BoxAndUrl from "@/components/box-and-url";
 import insertIntoDB from "@/lib/insertIntoDB";
-import {fontFamily} from "@mui/system";
 
 export default function Home() {
     return (
