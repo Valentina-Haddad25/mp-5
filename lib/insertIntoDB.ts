@@ -21,7 +21,10 @@ export default async function insertIntoDB(
         //deploy on vercel
         //
         // Generate the shortened URL
-        const shortenedUrl = `http://localhost:3000/${alias}`;
+        const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+
+        // Generate the shortened URL
+        const shortenedUrl = `${baseUrl}/${alias}`;
 
         // Define the URL entry
         const urlEntry = {
