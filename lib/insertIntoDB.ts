@@ -19,8 +19,8 @@ export default async function insertIntoDB(
         //deploy on vercel
         //
         // Generate the shortened URL
-      //  const baseUrl = process.env.BASE_URL || "https://mp-5-one.vercel.app/";
-        const shortenedUrl = `https://mp-5-m8i9rilvn-valentinas-projects-b3a82d84.vercel.app/${alias}`;
+       // const baseUrl = process.env.BASE_URL || "https://CS-391-MP-5.mp-5-one.vercel.app";
+        const shortenedUrl = `https://CS-391-MP-5.mp-5-one.vercel.app/${alias}`;
         //here
         // Define the URL entry
         const urlEntry = {
